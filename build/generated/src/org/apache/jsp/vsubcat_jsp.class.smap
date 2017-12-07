@@ -1,0 +1,24 @@
+SMAP
+vsubcat_jsp.java
+JSP
+*S JSP
+*F
++ 0 vsubcat.jsp
+vsubcat.jsp
++ 1 adminheader.jsp
+adminheader.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+5,21:51
+1#1:72
+6:78,2
+7,27:80
+25#0,12:106
+37,34:119
+70,6:153
+76,44:160
+119,7:204
+1#2,6:211
+125#0,7:216
+*E

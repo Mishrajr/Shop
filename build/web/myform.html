@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="jquery/jquery-2.2.0.min.js"></script>
+<script>
+$(document).ready(function(e) {
+    $("#name").focus(function()
+	{	
+	$("#dispaly").html("Welcome guest")	
+	})
+	$("#name").blur(function()
+	{
+		var a=$(this).val();
+		if(a=="")
+		{
+			$("#dispaly").html("Welcome Guest")
+		}
+		else
+		{
+			$("#dispaly").html("Welcome "+a)
+		}
+	})
+	$("#form1").submit(function(){
+		var name=$("#name").val();
+		var email=$("#email").val();
+		var phno=$("#phno").val();
+		$("#info").html("Nmae is="+name+"<br>Email is="+email+"<br>Phno is="+phno )
+		return false;
+		})
+});
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="50%" border="0" cellspacing="0                                                                                     0" cellpadding="0">
+    <tr>
+      <td>Enter name</td>
+      <td><input type="text" name="name" id="name" class="abc"/></td>
+    </tr>
+    <tr>
+      <td>Enter email</td>
+      <td><input type="text" name="email" id="email" class="abc"/></td>
+    </tr>
+    <tr>
+      <td>Enter phno</td>
+      <td><input type="text" name="phno" id="phno" class="abc"/></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><div id="dispaly"></div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><p>
+        <input type="submit" name="s1" id="s1" value="Submit" />
+      </p>
+        <div id="info"></div>
+        <p>&nbsp;</p>
+      <p>&nbsp; </p></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

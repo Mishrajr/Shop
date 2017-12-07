@@ -1,0 +1,26 @@
+SMAP
+addpro_jsp.java
+JSP
+*S JSP
+*F
++ 0 addpro.jsp
+addpro.jsp
++ 1 adminheader.jsp
+adminheader.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+5,58:60
+1#1:118
+6:124,2
+7,27:126
+62#0,18:152
+80,34:171
+113,14:205
+127,34:220
+160,33:254
+193,140:288
+332,9:428
+1#2,6:437
+340#0,7:442
+*E
